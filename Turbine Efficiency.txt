@@ -1,0 +1,13 @@
+def calculate_wind_turbine_efficiency(power_output, rotor_area):
+    # Wind energy density (typically around 0.5 kg/m^3)
+    wind_energy_density = 0.5
+    
+    # Wind turbine efficiency formula
+    efficiency = (power_output / (0.5 * wind_energy_density * rotor_area)) * 100
+    return efficiency
+
+# Example usage:
+power_output = 1500  # kW
+rotor_area = 200  # m^2
+efficiency = calculate_wind_turbine_efficiency(power_output, rotor_area)
+print("Wind turbine efficiency:", efficiency, "%")
